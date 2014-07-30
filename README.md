@@ -67,6 +67,7 @@ Included service implementations
     - Harvest
     - Heroku
     - Instagram
+    - InterExchange
     - LinkedIn
     - Mailchimp
     - Microsoft
