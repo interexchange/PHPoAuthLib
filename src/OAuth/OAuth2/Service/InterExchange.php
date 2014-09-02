@@ -36,7 +36,7 @@ class InterExchange extends AbstractService
         parent::__construct($credentials, $httpClient, $storage, $scopes, $baseApiUri);
 
         if (null === $baseApiUri) {
-            $this->baseApiUri = new Uri('https://access.workabroad.io/');
+            $this->baseApiUri = new Uri('https://auth.interexchange.io/');
         }
     }
 
@@ -45,7 +45,7 @@ class InterExchange extends AbstractService
      */
     public function getAuthorizationEndpoint()
     {
-        return new Uri('https://access.workabroad.io/oauth/authorize');
+        return new Uri('https://auth.interexchange.io/oauth/authorize');
     }
 
     /**
@@ -53,7 +53,7 @@ class InterExchange extends AbstractService
      */
     public function getAccessTokenEndpoint()
     {
-        return new Uri('https://access.workabroad.io/oauth/token');
+        return new Uri('https://auth.interexchange.io/oauth/token');
     }
 
     /**
